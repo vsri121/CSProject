@@ -17,11 +17,15 @@ if (isset($_SESSION['username'])) {
 <body>
 <div class="login-container">
         <h2>Login</h2>
+        <p>Don't have an account? <a href="signup.php">Sign up here</a>.</p>
         <form action="authenticate.php" method="POST">
+            
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
+
+
     </div>
 </body>
 </html>

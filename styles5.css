@@ -1,0 +1,128 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.course-details-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-details-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.course-details-container p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.course-details-container p strong {
+    color: #4CAF50;
+}
+
+.course-details-container p:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.course-details-container p:last-child {
+    padding-bottom: 0;
+}
+
+.course-details-container .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.course-details-container .back-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .course-details-container {
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}

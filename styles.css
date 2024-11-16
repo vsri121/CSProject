@@ -1,37 +1,121 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
-.login-container, form {
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
+
+/* General body styles */
+body {
+    background: linear-gradient(to right, #34e89e, #0f9b8e); /* Green gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container styles */
+.login-container {
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
-input, textarea, button {
-    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
     width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading styles */
+.login-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph and link styles */
+.login-container p {
+    font-size: 14px;
     margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    color: #666;
 }
-button {
-    background-color: #5cb85c;
-    color: white;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #4cae4c;
-}
-a {
-    color: #007BFF;
+
+.login-container a {
+    color: #0f9b8e;
     text-decoration: none;
+    font-weight: bold;
 }
-a:hover {
+
+.login-container a:hover {
     text-decoration: underline;
+}
+
+/* Input fields */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #0f9b8e;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Button styles */
+.login-container button {
+    width: 100%;
+    padding: 10px 15px;
+    background: #0f9b8e; /* Green button */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background: #34e89e; /* Lighter green on hover */
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 15px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .login-container p {
+        font-size: 12px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 14px;
+    }
 }
